@@ -1,0 +1,128 @@
+
+body{
+    margin:0;
+    background-color: hsl(198, 83%, 88%);
+    color:hsl(33, 15%, 88%);
+    font-weight: 900;
+}
+h1{
+    color:hsl(240, 58%, 23%);
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    position: fixed;
+    top:0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contactform{
+    background-color: white;
+    box-shadow:0 0 10px 0 hsl(0,0,50%);
+    margin:30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:23px;
+    width:max-content;
+    padding:7px 16px;
+}
+label{
+    font-size: 14px;
+    color: rgb(15, 92, 200);
+}
+input{
+    cursor: pointer;
+}
+#fname,#lname{
+    width:220px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+#email{
+    width:470px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+#Message{
+    width:470px;
+    height:70px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+#submit{
+    width:470px;
+    height:40px;
+    font-size: 16px;
+    border-radius:5px;
+    border:1px solid grey;
+    background-color: hsl(169, 82%, 27%);
+    font-weight: 500;
+    color: white ;
+}
+.radio{
+    width:220px;
+    height:40px;
+    border-radius:5px;
+    border:1px solid grey;
+    text-align: center;
+    padding:12px 0 1px 0;
+}
+.row{
+    display:flex;
+    gap:20px;
+}
+.row1{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:0px;
+    margin: 0;
+}
+.error{
+    display:none;
+    color:hsl(0, 66%, 54%);
+    font-size: 12px;
+}
+.display{
+    display:block;
+    color:hsl(0, 66%, 54%);
+    font-size: 12px;
+}
+.msg{
+    display: none;}
+.msg1{
+    display:flex;
+    background-color: black;
+    color:white;
+    flex-direction: column;
+    width:fit-content;
+    border-radius: 8px;
+    padding:7px 12px;
+    position: absolute;
+    top:25px;
+    left:500px;
+    gap:35px;
+}
+@media only screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+    }
+    #submit,#Message,#email,#lname,.radio,#fname{
+        width:80%;
+    }
+    #radio1,#radio2 label{
+        padding-left:0;
+        text-align: left;
+    }
+    .sucess1{
+        width:90%;
+        position: none;
+        left:10px;
+    }
+
+}
